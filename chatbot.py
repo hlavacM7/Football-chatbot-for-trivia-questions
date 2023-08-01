@@ -8,9 +8,9 @@ import string
 import numpy as np
 import pandas as pd
 
-#nltk.download("punkt")
-#nltk.download("wordnet")
-#nltk.download("stopwords")
+nltk.download("punkt")
+nltk.download("wordnet")
+nltk.download("stopwords")
 
 lemmatizer = WordNetLemmatizer()
 
