@@ -1,0 +1,12 @@
+# created by virtualenv automatically
+
+# .gitignore
+__pycache__/
+*.py[cod]
+*$py.class
+
+# If using Jupyter notebooks
+.ipynb_checkpoints
+
+# virtual environment
+venv/

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Football Trivia Chatbot</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>    
+<body>
+    <div class="container">
+        <h1>Football Trivia Chatbot</h1>
+        <div id="chatbox">
+            <p class="bot">Chatbot: Hello! Ask me a football trivia question.</p>
+        </div>
+        <form id="myForm">
+            <input type="text" id="input" autocomplete="off" autofocus>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        function getBotResponse() {
+            var rawText = $("#input").val();
+            var userHtml = '<p class="user">User: ' + rawText + '</p>';
+            $("#chatbox").append(userHtml);
+            $("#input").val("");
+            $.get("/get", { msg: rawText }).done(function(data) {
+                var botHtml = '<p class="bot">Chatbot: ' + data + '</p>';
+                $("#chatbox").append(botHtml);
+                // Auto scroll to bottom of chatbox
+                $("#chatbox").scrollTop($("#chatbox")[0].scrollHeight);
+            });
+        }
+        $("#myForm").on("submit", function(e) {
+            e.preventDefault();
+            getBotResponse();
+        });
+    </script>
+</body>
+</html>
