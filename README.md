@@ -31,5 +31,5 @@ This is a simple Natural Language Processing (NLP) project that implements a cha
 This project serves as a basic, end-to-end application in the domain of Natural Language Processing (NLP). By implementing a chatbot capable of answering trivia questions, it provides an illustrative example of how NLP can be applied in a practical scenario. Using techniques like cosine similarity for matching user queries with existing questions in the database, the application showcases some fundamental aspects of information retrieval in NLP. Even tho it's accuracy is not the best it can be easily scalable by creating larger database. My goal wasn't to build sophisticated large language model, instead i wanted to build my first end-to-end application that showcases basic NLP concepts and also has something on top provided by the Flask application. Moving forward, this project will serve as a valuable starting point in the broader study of NLP, laying a solid foundation upon which more complex and sophisticated NLP applications can be built.
 </p>
 
-<h2>Link: </h2>  <p>ttps://footballtriviachat.onrender.com</p>
+<p>Link: https://footballtriviachat.onrender.com</p>
 <p>In case this link isn't working here is a video demo: </p>
