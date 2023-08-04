@@ -32,4 +32,4 @@ This project serves as a basic, end-to-end application in the domain of Natural 
 </p>
 
 <p>Link: https://footballtriviachat.onrender.com</p>
-<p>In case this link isn't working here is a video demo: </p>
+<p>In case this link isn't working here is a video demo: https://youtu.be/Ju-FzBnRioc </p>
